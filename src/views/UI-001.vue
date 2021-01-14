@@ -74,7 +74,7 @@
   }
   &:hover {
     input {
-      border-bottom-color: #8d8d8d;
+      border-color: #47bfff;
     }
     label {
       color: #8d8d8d;
@@ -82,9 +82,9 @@
   }
 }
 .form-group input:focus {
-  outline: none;
-  border-bottom-color: #42b983;
-  background-color: #f7f7f7;
+  outline-style: solid;
+  outline-color: #1a44c2;
+  border-color: #47bfff;
 }
 .terms {
   a {

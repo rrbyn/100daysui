@@ -1,13 +1,15 @@
 <template>
   <div class="test">
     <div class="errorMsgContainer">
-      <div class="errorMsg">
-        <span>Could not find the page you were looking for</span>
-      </div>
-      <button type="submit" class="errorButton">Go back</button>
+      <form action="">
+        <input type="submit" value="Go back" class="errorButton" />
+      </form>
     </div>
     <div class="rightMessage">
       <div class="number">404</div>
+      <div class="errorMsg">
+        <span>Could not find the page you were looking for</span>
+      </div>
     </div>
   </div>
 </template>
@@ -18,22 +20,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: white;
+  color: #aba9a9;
   align-items: center;
   text-shadow: 1px black;
   height: 100vh;
-  animation: 1000ms ease-in-out infinite seizure-mode;
 }
 .rightMessage {
   display: flex;
   flex-direction: column;
 }
 .number {
-  font-size: 514px;
+  font-size: 480px;
 }
-.sad {
-  font-size: 192px;
-}
+
 span {
   font-size: 32px;
 }
@@ -41,6 +40,9 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.errorMsg {
+  color: #a8a8a8;
 }
 .errorButton {
   margin-top: 10px;
@@ -51,47 +53,6 @@ span {
   text-align: center;
   text-decoration: none;
   font-size: 32px;
-  width: 50%;
-}
-
-@keyframes color-change {
-  0% {
-    color: teal;
-  }
-  20% {
-    color: gold;
-  }
-  40% {
-    color: indianred;
-  }
-  60% {
-    color: violet;
-  }
-  80% {
-    color: green;
-  }
-  100% {
-    color: teal;
-  }
-}
-@keyframes seizure-mode {
-  0% {
-    background-color: teal;
-  }
-  20% {
-    background-color: gold;
-  }
-  40% {
-    background-color: indianred;
-  }
-  60% {
-    background-color: violet;
-  }
-  80% {
-    background-color: green;
-  }
-  100% {
-    background-color: teal;
-  }
+  width: 16rem;
 }
 </style>

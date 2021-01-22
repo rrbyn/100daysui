@@ -23,7 +23,7 @@
   color: #aba9a9;
   align-items: center;
   text-shadow: 1px black;
-  height: 100vh;
+  height: 91vh;
 }
 .rightMessage {
   display: flex;
@@ -48,6 +48,8 @@ span {
   margin-top: 10px;
   background-color: white;
   border: none;
+  border-radius: 4px;
+  font-weight: 600;
   color: lightgrey;
   padding: 5px;
   text-align: center;
